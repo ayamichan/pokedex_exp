@@ -1,10 +1,20 @@
 /* font */
 @import url(http://fonts.googleapis.com/css?family=Roboto:700);
 body {font: 1em "Courier New", "Lucida Console", monospace; color: white;}
-header h1 {font: 2em 'Roboto', sans-serif; text-transform:uppercase;}
+header h1 {font: 2em 'Roboto', sans-serif; text-transform:uppercase; color: #b10e1e;}
 
 ul li {display: inline-block; margin: 0 5px; padding: 0 5px;}
 
-.basic_info p, body {background-color: #ec1f33;}
+.right_col p, body {background-color: #ec1f33;}
 
 article, nav ul li:hover {background-color: #3e2b2d;}
+
+hr {border-bottom: 1px; border-color: #b10e1e;}
+
+.right_col, .left_col {display: inline-block; margin: 0 5%;}
+
+.right_col {width: 50%;}
+.left_col {width: 30%;}
+
+img {width: 100%; height: auto;}
+img_container {width:30%; height: auto;}
