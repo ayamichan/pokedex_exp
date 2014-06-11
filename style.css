@@ -1,20 +1,28 @@
 /* font */
 @import url(http://fonts.googleapis.com/css?family=Roboto:700);
 body {font: 1em "Courier New", "Lucida Console", monospace; color: white;}
-header h1 {font: 2em 'Roboto', sans-serif; text-transform:uppercase; color: #b10e1e;}
 
-ul li {display: inline-block; margin: 0 5px; padding: 0 5px;}
+.submenu, .header h1 {color: #b10e1e; text-transform:uppercase; text-align: center;}
+
+.header h1 {font: 2em 'Roboto', sans-serif;
+margin: 0 auto;
+width: 100%;
+background: url(images/sprites.png) -100px -15px  no-repeat;}
+
+header, nav, section, article, ul li, .right_col, .left_col {margin: 10px auto; padding: 0 5px;}
 
 .right_col p, body {background-color: #ec1f33;}
 
 article, nav ul li:hover {background-color: #3e2b2d;}
 
 hr {border-bottom: 1px; border-color: #b10e1e;}
+ ul li  {display: inline-block; }
 
-.right_col, .left_col {display: inline-block; margin: 0 5%;}
 
-.right_col {width: 50%;}
-.left_col {width: 30%;}
 
 img {width: 100%; height: auto;}
-img_container {width:30%; height: auto;}
+.img_container {width:30%; height: auto;}
+
+/*.right_col, .left_col, 
+.right_col {width: 50%;}
+.left_col {width: 30%;}*/
