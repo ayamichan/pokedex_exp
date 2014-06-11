@@ -1,5 +1,4 @@
 /* font */
-@import url(http://fonts.googleapis.com/css?family=Roboto:700);
 body {font: 1em "Courier New", "Lucida Console", monospace; color: white;}
 
 .submenu, .header h1 {color: #b10e1e; text-transform:uppercase; text-align: center;}
@@ -11,12 +10,14 @@ background: url(images/sprites.png) -100px -15px  no-repeat;}
 
 header, nav, section, article, ul li, .right_col, .left_col {margin: 10px auto; padding: 0 5px;}
 
+nav ul li {border: dashed white 1px; padding: 5px 20px; font-size: 0.8em}
+
 .right_col p, body {background-color: #ec1f33;}
 
 article, nav ul li:hover {background-color: #3e2b2d;}
 
 hr {border-bottom: 1px; border-color: #b10e1e;}
- ul li  {display: inline-block; }
+ul li  {display: inline-block; zoom: 1; *display: inline;}
 
 
 
