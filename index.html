@@ -1,120 +1,125 @@
 <!DOCTYPE html>
+
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Pokede Experiment</title>
+<title>Pokedex Experiment</title>
 <!--[if lt IE 9]>
   <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
   <![endif]-->
+  
+
 <link rel="stylesheet" href="reset.css">
-<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:700">
+<link href='http://fonts.googleapis.com/css?family=VT323|Roboto:700' rel='stylesheet' type='text/css'>
 <link rel="stylesheet" href="normalize.css">
 <link rel="stylesheet" href="style.css">
+
 </head>
 
 <body>
-	<header class="header">
-		
-		<h1>Pokemon Experiment</h1>
-		<section class="submenu"><ul><li>About</li><li>Sources</li></ul></section>
-		<hr>
-		<nav>
-			<ul>
-				<li>all</li>
-				<li>ice</li>
-				<li>grass</li>
-				<li>eletric</li>
-				<li>watter</li>
-				<li>bug</li>
-				<li>fire</li>
-				<li>rock</li>
-				<li>normal</li>
-				<li>dark</li>
-				<li>fairy</li>
-				<li>fighting</li>
-				<li>ghost</li>
-				<li>psychic</li>
-				<li>steel</li>
-				<li>poison</li>
-				<li>ground</li>
-				<li>flying</li>
-			</ul>
-		</nav>
-	</header>
-	<article>
-		<div class="right_col">
-			<hgroup>
-			<h1>#001</h1>
-			<h2>Bulbasaur</h2>
-			</hgroup>
+	<div class="wrapper"> 
+		<header class="header">
 			
-			<p>A strange seed was planted on its back at birth. The plant sprouts and grows with this Pokémon.</p>	
-			<section>
-				<div>
-					<h1>Stats</h1>
-					<h2>Base stats: Ivysaur</h2>
-					<table>
-					  <tr>
-					    <td colspan="2">Stat</td>
-					    <td>Range Lv. 100</td>
-					  </tr>
-					  <tr>
-					    <td>HP:</td>
-					    <td>60</td>
-					    <td>230 - 324</td>
-					  </tr>
-					   <tr>
-					    <td>Attack:</td>
-					    <td>62</td>
-					    <td>116 - 245</td>
-					  </tr>
-					   <tr>
-					    <td>Defense:</td>
-					    <td>63</td>
-					    <td>117 - 247</td>
-					  </tr>
-					   <tr>
-					    <td>Sp.Atk:</td>
-					    <td>80</td>
-					    <td>148 - 284</td>
-					  </tr>
-					   <tr>
-					    <td>Sp.Def:</td>
-					    <td>80</td>
-					    <td>148 - 284</td>
-					  </tr>
-					   <tr>
-					    <td>Speed:</td>
-					    <td>60</td>
-					    <td>112 - 240</td>
-					  </tr>
-					   <tr>
-					    <td colspan="2">Total:</td>
-					    <td>405</td>
-					    
-					  </tr>
-					</table>
-				<div>
-			</section>
-		</div>
-		<div class="left_col">
-			<div class="img_container"><img src="pokemons/001.png"></div>
-			<h1>Type</h1>
-			<p>grass</p>
-			<h1>Weaknesses & Resistance</h1>
-			<ul>
-				<li>*2 <span>fire<span></li>
-				<li>*2 <span>ice<span></li>
-				<li>*2 <span>flying<span></li>
-				<li>*2 <span>psychic<span></li>
-				<li>*0.5 <span>water<span></li>
-				<li>*0.25 <span>grass<span></li>
-				<li>*0.5 <span>fight<span></li>
-				<li>*0.5 <span>fairy<span></li>
-			</ul>
-		</div>
-	</article>
-	
+			<div class="logo"><h1>Pokemon Experiment</h1></div>
+			<section class="submenu"><ul><li>About</li><li>Sources</li></ul></section>
+			<hr>
+			<nav>
+				<ul>
+					<li><a href=""><span class="icon all"></span> all</a></li>
+					<li><a href=""><span class="icon ice"></span>ice</a></li>
+					<li><a href=""><span class="icon grass"></span>grass</a></li>
+					<li><a href=""><span class="icon eletric"></span>eletric</a></li>
+					<li><a href=""><span class="icon watter"></span>watter</a></li>
+					<li><a href=""><span class="icon bug"></span>bug</a></li>
+					<li><a href=""><span class="icon fire"></span>fire</a></li>
+					<li><a href=""><span class="icon rock"></span>rock</a></li>
+					<li><a href=""><span class="icon normal"></span>normal</a></li>
+					<li><a href=""><span class="icon dark"></span>dark</a></li>
+					<li><a href=""><span class="icon fairy"></span>fairy</a></li>
+					<li><a href=""><span class="icon fighting"></span>fighting</a></li>
+					<li><a href=""><span class="icon ghost"></span>ghost</a></li>
+					<li><a href=""><span class="icon psychic"></span>psychic</a></li>
+					<li><a href=""><span class="icon steel"></span>steel</a></li>
+					<li><a href=""><span class="icon poison"></span>poison</a></li>
+					<li><a href=""><span class="icon ground"></span>ground</a></li>
+					<li><a href=""><span class="icon flying"></span>flying</a></li>
+				</ul>
+			</nav>
+		</header>
+		<article>
+			<div class="right_col">
+				<hgroup>
+				<h1>#001</h1>
+				<h2>Bulbasaur</h2>
+				</hgroup>
+				
+				<p>A strange seed was planted on its back at birth. The plant sprouts and grows with this Pokémon.</p>	
+				<section>
+					<div class="table-stat">
+						<h1>Stats</h1>
+						<h2>Base stats: Ivysaur</h2>
+						<table>
+						  <tr>
+						    <th class="table-left-col" colspan="2">Stat</th>
+						    <th  class="table-right-col">Range Lv. 100</th>
+						  </tr>
+						  <tr>
+						    <td>HP:</td>
+						    <td>60</td>
+						    <td>230 - 324</td>
+						  </tr>
+						   <tr>
+						    <td>Attack:</td>
+						    <td>62</td>
+						    <td>116 - 245</td>
+						  </tr>
+						   <tr>
+						    <td>Defense:</td>
+						    <td>63</td>
+						    <td>117 - 247</td>
+						  </tr>
+						   <tr>
+						    <td>Sp.Atk:</td>
+						    <td>80</td>
+						    <td>148 - 284</td>
+						  </tr>
+						   <tr>
+						    <td>Sp.Def:</td>
+						    <td>80</td>
+						    <td>148 - 284</td>
+						  </tr>
+						   <tr>
+						    <td>Speed:</td>
+						    <td>60</td>
+						    <td>112 - 240</td>
+						  </tr>
+						   <tr>
+						    <td colspan="2">Total:</td>
+						    <td>405</td>
+						    
+						  </tr>
+						</table>
+					<div>
+				</section>
+			</div>
+			<div class="left_col">
+				<div class="img_container"><img src="pokemons/001.png"></div>
+				<h3>Type</h3>
+				<p class="type"><span class="icon grass"></span>grass</p>
+				<h3>Weaknesses & Resistance</h3>
+				<ul>
+					<li>*2 <span class="icon fire"></span>fire</li>
+					<li>*2 <span class="icon ice"></span>ice</li>
+					<li>*2 <span class="icon flying"></span>flying</li>
+					<li>*2 <span class="icon psychic"></span>psychic</li>
+					<li>*0.5 <span class="icon watter"></span>watter</li>
+					<li>*0.25 <span class="icon grass"></span>grass</li>
+					<li>*0.5 <span class="icon fighting"></span>fighting</li>
+					<li>*0.5 <span class="icon fairy"></span>fairy</li>
+				</ul>
+			</div>
+		</article>
+	</div>
 
 </body>
 </html>

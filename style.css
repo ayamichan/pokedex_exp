@@ -1,29 +1,98 @@
-/* font */
-body {font: 1em "Courier New", "Lucida Console", monospace; color: white;}
 
+/*Font configuration*/
+body, a {font: 1em "Courier New", "Lucida Console", monospace; color: white;}
+a {text-decoration:none;}
 .submenu, .header h1 {color: #b10e1e; text-transform:uppercase; text-align: center;}
+.header h1 {font: 2em 'Roboto', sans-serif;}
+h2 {font-size: 1.5em;}
+nav ul li, .type {font-size: 0.8em; text-align: center;}
+hgroup h1 {font-size: 4em;}
 
-.header h1 {font: 2em 'Roboto', sans-serif;
-margin: 0 auto;
-width: 100%;
-background: url(images/sprites.png) -100px -15px  no-repeat;}
-
+/*Margins + Paddings + Sizing + position and display*/
+ul li, span, hgroup h1, hgroup h2 {display:-moz-inline-stack; display:inline-block; zoom:1; *display:inline; vertical-align:top;} 
+hgroup h1, hgroup h2 {vertical-align: baseline;}
 header, nav, section, article, ul li, .right_col, .left_col {margin: 10px auto; padding: 0 5px;}
+.right_col p, .left_col p {padding: 15px;}
+img {width: 100%; height: auto;}
+.img_container {width:90%; height: auto; min-height: 220px; min-width: 220px;}
+span {margin-right: 10px;}
+nav ul li, .type { padding: 5px; margin: 7px 5px;}
+.logo {padding-left: 43px;}
+article, .wrapper, .header {width: 95%;}
+.wrapper {margin: 0 auto;}
 
-nav ul li {border: dashed white 1px; padding: 5px 20px; font-size: 0.8em}
+/*Table */
+.table-stat table {width: 80%; margin-top: 15px; }
+.table-stat th { border-bottom: 1px dashed white; text-align: left;}
+.table-stat td {text-align: right;}
+.table-stat .table-left-col{width:40%; text-align: left;}
+.table-stat .table-right-col{width:60%; text-align: right;}  
 
+/* Borders & Radius*/
+.right_col p, nav ul li, .type, article {border-radius: 8px; -moz-border-radius:8px; -webkit-border-radius:8px;}
+hr {border-bottom: 1px; border-color: #b10e1e;}
+nav ul li, .type {border: dashed white 1px;}
+/*Background */
+img {background: url(images/bars.gif);}
+.icon, .logo  {background: url('images/sprites.png') no-repeat;}
 .right_col p, body {background-color: #ec1f33;}
 
-article, nav ul li:hover {background-color: #3e2b2d;}
+article, nav ul li:hover {background-color: #3e2b2d; border-color: red;}
 
-hr {border-bottom: 1px; border-color: #b10e1e;}
-ul li  {display: inline-block; zoom: 1; *display: inline;}
+.icon {background-position:-15px -15px; width: 15px; height: 15px;}
+.logo {background-position:-105px -15px;}
+
+a .ice {background-position: -30px -30px;}
+a .grass {background-position: -45px -60px;}
+a .eletric {background-position: -75px -30px;}
+a .watter {background-position: -60px -15px;}
+a .bug {background-position: -15px -60px;}
+a .fire {background-position:-15px -30px;}
+a .rock{background-position: -30px -15px;}
+a .normal {background-position: -45px -15px;}
+a .dark {background-position: -45px -30px;}
+a .fairy {background-position: -60px -45px;}
+a .fighting {background-position: -30px -60px;}
+a .ghost {background-position: -15px -45px;}
+a .psychic {background-position: -30px -45px;}
+a .steel {background-position: -60px -30px;}
+a .poison {background-position: -60px -60px;}
+a .ground {background-position:-45px -45px;}
+a .flying {background-position: -75px -15px;}
+
+.ice, a:hover .ice {background-position: -30px -105px;}
+.grass, a:hover .grass {background-position: -45px -135px;}
+.eletric, a:hover .eletric {background-position: -75px -105px;}
+.watter, a:hover .watter {background-position: -60px -90px;}
+.bug, a:hover .bug {background-position: -15px -135px;}
+.fire, a:hover .fire {background-position:-15px -105px;}
+.rock, a:hover .rock{background-position: -30px -90px;}
+.normal, a:hover .normal {background-position: -45px -90px;}
+.dark, a:hover .dark {background-position: -45px -105px;}
+.fairy, a:hover .fairy {background-position: -60px -120px;}
+.fighting, a:hover .fighting {background-position: -30px -135px;}
+.ghost, a:hover .ghost {background-position: -15px -120px;}
+.psychic, a:hover .psychic {background-position: -30px -120px;}
+.steel, a:hover .steel {background-position: -60px -105px;}
+.poison, a:hover .poison {background-position: -60px -135px;}
+.ground, a:hover .ground {background-position:-45px -120px;}
+.flying, a:hover .flying {background-position: -75px -90px;}
 
 
+/* media queries */
 
-img {width: 100%; height: auto;}
-.img_container {width:30%; height: auto;}
 
-/*.right_col, .left_col, 
-.right_col {width: 50%;}
-.left_col {width: 30%;}*/
+@media only screen and (min-width:768px) {
+
+	.right_col{width: 45%; float: right;}
+	.left_col {width: 40%;}
+
+	.right_col, .left_col {margin: 2.5%}
+	.right_col, .left_col {display:-moz-inline-stack; display:inline-block; zoom:1; *display:inline; vertical-align:top;}
+	.wrapper {width:768px;}
+}
+
+@media only screen and (min-width: 1024px) {
+
+	
+}
